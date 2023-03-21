@@ -12,13 +12,13 @@ Since this is a one-week project, make sure that you have done at least half of 
 
 Although you and your partner will divide the work, it’s essential to collaborate and communicate while working on different parts of the project. Be sure to check in with your partner regularly and offer support.
 
-Files
+#Files
 
 Download the starter code and files to help you get started:
 
 Project 2 ETL filesLinks to an external site.
 
-Before You Begin
+#Before You Begin
 
 1.	Create a new repository, named Crowdfunding_ETL, for this project. Do not add this homework to an existing repository.
 
@@ -28,7 +28,7 @@ Before You Begin
 
 4.	Push the changes to GitHub
 
-Instructions
+33Instructions
 
 The instructions for this mini project are divided into the following subsections:
 
@@ -40,7 +40,7 @@ The instructions for this mini project are divided into the following subsection
 
         •	Create the Crowdfunding Database
 
-Create the Category and Subcategory DataFrames
+##Create the Category and Subcategory DataFrames
 
 1.	Extract and transform the crowdfunding.xlsx Excel data to create a category DataFrame that has the following columns:
 
@@ -49,6 +49,8 @@ Create the Category and Subcategory DataFrames
             o	A "category" column that contains only the category titles
 
             o	The following image shows this category DataFrame:
+            ![image](https://user-images.githubusercontent.com/117088893/226766873-0936f20f-eea1-4e71-bb3d-b05ad8d807ae.png)
+
  
 2.	Export the category DataFrame as category.csv and save it to your GitHub repository.
 
@@ -59,11 +61,13 @@ Create the Category and Subcategory DataFrames
             o	A "subcategory" column that contains only the subcategory titles
 
             o	The following image shows this subcategory DataFrame:
+            ![image](https://user-images.githubusercontent.com/117088893/226766913-570e8f45-d68e-4b5b-aa6c-379d896efbf0.png)
+
 
  
 4.	Export the subcategory DataFrame as subcategory.csv and save it to your GitHub repository.
 
-Create the Campaign DataFrame
+##Create the Campaign DataFrame
 
 1.	Extract and transform the crowdfunding.xlsx Excel data to create a campaign DataFrame has the following columns:
 
@@ -96,9 +100,12 @@ Create the Campaign DataFrame
             o	The "subcategory_id" column, with the unique identification numbers matching those in the "subcategory_id" column of the subcategory DataFrame
 
             o	The following image shows this campaign DataFrame:
+            ![image](https://user-images.githubusercontent.com/117088893/226766968-11a5471a-8956-44a4-93db-d4774a504e88.png)
+
  
 2.	Export the campaign DataFrame as campaign.csv and save it to your GitHub repository.
-Create the Contacts DataFrame
+
+##Create the Contacts DataFrame
 
 1.	Choose one of the following two options for extracting and transforming the data from the contacts.xlsx Excel data:
 
@@ -140,7 +147,7 @@ Create the Contacts DataFrame
 
 4.	Check that your final DataFrame resembles the one in the following image:
  
-Create the Crowdfunding Database
+##Create the Crowdfunding Database
 
 1.	Inspect the four CSV files, and then sketch an ERD of the tables by using QuickDBDLinks to an external site..
 
@@ -151,6 +158,8 @@ Note: Remember to specify the data types, primary keys, foreign keys, and other 
 3.	Save the database schema as a Postgres file named crowdfunding_db_schema.sql, and save it to your GitHub repository.
 
 4.	Create a new Postgres database, named crowdfunding_db.
+![image](https://user-images.githubusercontent.com/117088893/226767015-3a613615-c607-43c9-bf5a-6f6ad84353e1.png)
+
 
 5.	Using the database schema, create the tables in the correct order to handle the foreign keys.
 
@@ -160,7 +169,7 @@ Note: Remember to specify the data types, primary keys, foreign keys, and other 
 
 8.	Verify that each table has the correct data by running a SELECT statement for each.
 
-Hints
+##Hints
 
     •	To split each "category & sub-category" column value into "category" and "subcategory" column values, use df[["new_column1","new_column2"]] = df["column"].str.split(). Make sure to pass the correct parameters to the split() function.
 
@@ -176,12 +185,12 @@ Hints
 
     •	For more information about how to add the "category_id" and "subcategory_id" unique identification numbers to the campaign DataFrame, see the pandas.DataFrame.mergeLinks to an external site. in the Pandas documentation.
 
-Support and Resources
+##Support and Resources
 
 Your instructional team will provide support during classes and office hours. You will also have access to learning assistants and tutors to help you with topics as needed. Make sure to take advantage of these resources as you collaborate with your partner on this project.
 Requirements
 
-A Category DataFrame is Created (15 points)
+##A Category DataFrame is Created (15 points)
 
     •	The DataFrame contains a "category_id" column that has entries going sequentially from "cat1" to "catn", where n is the number of unique categories (5 points)
 
@@ -189,7 +198,7 @@ A Category DataFrame is Created (15 points)
 
     •	The category DataFrame is exported as category.csv (5 points)
 
-A Subcategory DataFrame is Created (15 points)
+##A Subcategory DataFrame is Created (15 points)
 
     •	The DataFrame contains a "subcategory_id" column that has entries going sequentially from "subcat1" to "subcatn", where n is the number of unique subcategories (5 points)
 
@@ -197,7 +206,7 @@ A Subcategory DataFrame is Created (15 points)
 
     •	The subcategory DataFrame is exported as category.csv (5 points)
 
-A Campaign DataFrame is Created (30 points)
+##A Campaign DataFrame is Created (30 points)
 
     •	The DataFrame has the following columns: (25 points)
 
@@ -231,7 +240,7 @@ A Campaign DataFrame is Created (30 points)
 
     •	The campaign DataFrame is exported as campaign.csv (5 points)
 
-A Contacts DataFrame is Created (15 points)
+##A Contacts DataFrame is Created (15 points)
 
     •	The DataFrame has the following columns: (10 points)
 
@@ -245,7 +254,7 @@ A Contacts DataFrame is Created (15 points)
 
     •	The contacts DataFrame is exported as contacts.csv (5 points)
 
-A Crowdfunding Database is Created (25 points)
+##A Crowdfunding Database is Created (25 points)
 
     •	A database schema labeled, crowdfunding_db_schema.sql is created (5 points)
 
