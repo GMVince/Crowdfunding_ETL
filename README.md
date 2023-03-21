@@ -19,23 +19,29 @@ Before You Begin
 4.	Push the changes to GitHub
 Instructions
 The instructions for this mini project are divided into the following subsections:
- •	Create the Category and Subcategory DataFrames
- •	Create the Campaign DataFrame
- •	Create the Contacts DataFrame
- •	Create the Crowdfunding Database
+
+  •	Create the Category and Subcategory DataFrames
+  •	Create the Campaign DataFrame
+  •	Create the Contacts DataFrame
+  •	Create the Crowdfunding Database
+  
 Create the Category and Subcategory DataFrames
 1.	Extract and transform the crowdfunding.xlsx Excel data to create a category DataFrame that has the following columns:
- o	A "category_id" column that has entries going sequentially from "cat1" to "catn", where n is the number of unique categories
- o	A "category" column that contains only the category titles
- o	The following image shows this category DataFrame:
- • Create the Category and Subcategory DataFrames • 
+
+   o	A "category_id" column that has entries going sequentially from "cat1" to "catn", where n is the number of unique categories
+   o	A "category" column that contains only the category titles
+   o	The following image shows this category DataFrame:
+   
+  • Create the Category and Subcategory DataFrames • 
+  
 ![image](https://user-images.githubusercontent.com/117088893/226711092-e6e17ccd-3130-43d4-9fd8-ffa8b0b44d93.png)
 
 2.	Export the category DataFrame as category.csv and save it to your GitHub repository.
 3.	Extract and transform the crowdfunding.xlsx Excel data to create a subcategory DataFrame that has the following columns:
- o	A "subcategory_id" column that has entries going sequentially from "subcat1" to "subcatn", where n is the number of unique subcategories
- o	A "subcategory" column that contains only the subcategory titles
- o	The following image shows this subcategory DataFrame:
+ 
+  o	A "subcategory_id" column that has entries going sequentially from "subcat1" to "subcatn", where n is the number of unique subcategories
+  o	A "subcategory" column that contains only the subcategory titles
+  o	The following image shows this subcategory DataFrame:
  
 4.	Export the subcategory DataFrame as subcategory.csv and save it to your GitHub repository.
 Create the Campaign DataFrame
